@@ -2,7 +2,7 @@ def SendGmailFunc():
     import smtplib, ssl
 
     port = 465  # For SSL
-    password = 'Cpurple93!'
+    password = 'secrets.PASSWORD'
 
     # Create a secure SSL context
     context = ssl.create_default_context()
