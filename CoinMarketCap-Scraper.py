@@ -5,16 +5,16 @@ from SendGmail import *
 initial_request=HTMLParser1()
 
 print("running")
-time.sleep(30)
+time.sleep(1)
 while True:
 
-                
+
         # create a new parse
         request = HTMLParser1()
         print(request)
-        # wait for 30 seconds
-        time.sleep(30)
-                
+        # wait for .1 seconds
+        time.sleep(.1)
+
         # create a new parse
         newRequest = HTMLParser1()
         print(newRequest)
@@ -22,8 +22,7 @@ while True:
         if not request==newRequest:
                 print("New coin added")  #notify
                 #write email notification
-                SendGmailFunc()         
-        # wait for 30 seconds
-        time.sleep(30)
+                SendGmailFunc()
+        # wait for .1 seconds
+        time.sleep(.1)
         continue
-			
